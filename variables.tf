@@ -105,7 +105,7 @@ variable "hadoop_version" {
 }
 
 variable "worker_instance_shape" {
-  default = "VM.Standard2.8"
+  default = "VM.Standard.E2.1.Micro"
 }
 
 # This should not increment.
@@ -143,15 +143,15 @@ variable "vpus_per_gb" {
 }
 
 variable "edge_instance_shape" {
-  default = "VM.Standard2.4"
+  default = "VM.Standard.E2.1.Micro"
 }
 
 variable "master_instance_shape" {
-  default = "VM.Standard2.8"
+  default = "VM.Standard.E2.1.Micro"
 }
 
 variable "master_node_count" {
-  default = "3"
+  default = "1"
 }
 
 # Size for NameNode and SecondaryNameNode data volume (Journal Data)
